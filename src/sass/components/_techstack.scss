@@ -1,0 +1,49 @@
+.section-techstack{
+    text-align: center;
+    // height: 70vh;
+    background: $color-grey-lightest;
+}
+
+.box{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    align-items: center;
+
+    &__left{
+        flex: 1;
+        text-align: left;
+        position: relative;
+
+        .heading-tertiary{
+            font-size: 2.5rem;
+            display: inline-block;
+            padding: 0rem 2rem;
+            border-radius: 50px;
+            color: $color-white;
+            transform: rotate(-5deg);
+            position: absolute;
+            top: -50px;
+            left: -15px;
+            background: linear-gradient(to right, $color-primary, $color-secondary);
+            transform-origin: left;
+            transition: transform .6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+            cursor: pointer;
+            backface-visibility: hidden;
+            &:hover{
+                transform: rotate(0deg);
+            }
+        }
+
+        p{
+            color: $color-grey-dark;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+    }
+    &__right{
+        flex: 1;
+    }
+}
