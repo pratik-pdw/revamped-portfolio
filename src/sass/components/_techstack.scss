@@ -11,7 +11,7 @@
     padding: 0rem 2rem;
     align-items: center;
 
-    @media (max-width: 681px) {
+    @include responsive(mb) {
         flex-direction: column;
     }
 
@@ -19,6 +19,12 @@
         flex: 1;
         text-align: left;
         padding: 2rem;
+
+        @include responsive(mb) {
+            order: 2;
+            text-align: center;
+            margin-top: 2rem;
+        }
 
         @include responsive(mb) {
             padding: 1rem;
@@ -62,5 +68,9 @@
     }
     &__right {
         flex: 1;
+
+        @include responsive(mb) {
+            order: 1;
+        }
     }
 }
