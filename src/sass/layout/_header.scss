@@ -1,44 +1,60 @@
-.header{
+.header {
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(112.28deg, $color-primary 11.42%, $color-secondary 77.31%);
-     position: relative;
-     overflow: hidden;
- 
-     &__curve{
-         position: absolute;
-         bottom: -30px;
-         width: calc(124% + 1.3px);
- 
-         &-shape{
-             fill: $color-grey-lightest;
-         }
-     }
- 
-     &__content{
-         position: absolute;
-         top: 40%;
-         left: 50%;
-         transform: translate(-50%,-50%);
-         text-align: center;
-         color: white;
-         width: 60%;       
-     }
+    background-image: linear-gradient(112.28deg, $color-primary 11.42%, $color-secondary 77.31%);
+    position: relative;
+    overflow: hidden;
 
-     &__desc{
-        font-family: Source Sans Pro;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 1.9;
+    &__curve {
+        position: absolute;
+        bottom: 0px;
+        width: calc(124% + 1.3px);
+
+        &-shape {
+            fill: $color-grey-lightest;
+        }
     }
 
-    &__typewriter{
+    &__content {
+        font-family: inherit;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 60%;
+
+        @include responsive(tbp) {
+            width: 80%;
+        }
+
+        @include responsive(mb) {
+            width: 90%;
+        }
+    }
+
+    &__desc {
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.9;
+
+        @include responsive(tbp) {
+            font-size: 1.6rem;
+        }
+
+        @include responsive(mb) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__typewriter {
         display: inline-block;
-        &-txt{
+        &-txt {
             border-right: 3px solid $color-white;
             display: inline-block;
         }
     }
-   
- }
+}

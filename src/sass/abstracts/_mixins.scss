@@ -1,18 +1,18 @@
-@mixin responsive ($breakpoint) {
+@mixin responsive($breakpoint) {
     @if $breakpoint == mb {
-        @media only screen and (max-width: 600px) {
+        @media (max-width: 600px) {
             @content;
         }
     }
 
     @if $breakpoint == tbp {
-        @media only screen and (max-width: 900px) {
+        @media (max-width: 900px) {
             @content;
         }
     }
 
     @if $breakpoint == tbl {
-        @media only screen and (max-width: 1200px) {
+        @media (max-width: 1200px) {
             @content;
         }
     }

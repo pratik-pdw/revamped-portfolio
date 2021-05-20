@@ -37,6 +37,7 @@ function Header() {
                 Oracle Alta UI and Material UI. I have developed applications on Angular and Ionic. I am always keen to
                 learn new technologies and keep myself updated with latest technology trends.</p>
                 <button className="btn btn-outlined">Resume</button>
+                {/* <a href="#techstack">Tech</a> */}
             </div>
         </header>
     )

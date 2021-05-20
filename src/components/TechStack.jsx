@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import htmlIcon from '@iconify-icons/vscode-icons/file-type-html';
 import cssIcon from '@iconify-icons/vscode-icons/file-type-css';
 import jsIcon from '@iconify-icons/logos/javascript';
@@ -18,8 +18,8 @@ import flexedBiceps from '@iconify-icons/noto-v1/flexed-biceps';
 
 function TechStack() {
     return (
-        <section className="section-techstack">
-            <h3 className="heading-secondary margin-bottom-small">Tech Stack</h3>
+        <section id="techstack" className="section-techstack">
+            <h3 className="heading-secondary margin-bottom-medium">Tech Stack</h3>
             <div className="box">
                 <div className="box__left">
                     <h3 className="heading-tertiary">Frontend is my FORTE! <Icon icon={flexedBiceps} /></h3>
