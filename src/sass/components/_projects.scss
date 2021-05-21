@@ -47,6 +47,7 @@
 
         img {
             // height: 100%;
+            box-shadow: 0px 1px 1rem rgba($color-black, 0.6);
             width: 100%;
             position: absolute;
             border-radius: 10px;
@@ -56,11 +57,21 @@
             transform: rotate(-10deg) translate(50px, 50px);
         }
     }
-    &-title {
-        box-decoration-break: break;
+
+    &__description {
+        font-size: 1.6rem;
+        line-height: 1.8;
+
+        @include responsive(tbp) {
+            font-size: 1.4rem;
+        }
     }
 }
 
 .card:hover .card__imgplaceholder img {
     transform: scale(1.1) translate(0px, 0px);
+
+    @include responsive(tbp) {
+        transform: rotate(-10deg) translate(50px, 50px);
+    }
 }
