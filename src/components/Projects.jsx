@@ -1,6 +1,7 @@
 import React from 'react'
 import randomcolor from 'randomcolor'
 
+import ecommerceapp from '../images/ecommerceapp.png'
 import restful from '../images/restful.png'
 import astrology from '../images/astrologyapp.png'
 import musicapp from '../images/musicapp.png'
@@ -12,7 +13,7 @@ function Projects() {
             title: "IONIC App for Local Business",
             description:
                 "Developed a e-commerce application for a local business where manufacturers can list their products and potential buyers can raise purchase requests. This application is deployed for both IOS and Android users.",
-            img: undefined,
+            img: ecommerceapp,
             link: "https://theshubhammarketing.com",
         },
         {
@@ -65,8 +66,8 @@ function Projects() {
                                 {project.img && <img src={project.img} alt={`Logo for ${project.title}`} />}
                                 {!project.img && <p>No Image Preview Available</p>}
                             </div>
-                            <h3 className="card__title heading-tertiary">{project.title}</h3>
-                            <p className="card__description">A Postman like clone built with Angular and Bootstrap which can be used to fire GET, POST, PUT, PATCH, DELETE requests right in the browser</p>
+                            <h3 className="font-size-small card__title heading-tertiary">{project.title}</h3>
+                            <p className="card__description">{project.description}</p>
                             {/* <a className="card__link btn" href="#!">Visit</a> */}
                         </div>
                     })

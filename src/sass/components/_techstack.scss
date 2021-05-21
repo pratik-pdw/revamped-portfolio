@@ -50,14 +50,15 @@
 
 .section-techstack {
     position: relative;
+    // overflow-x: hidden;
     .techstack__curve {
         // svg
         position: absolute;
         transform: rotate(180deg);
         left: 0;
         top: 100%;
-        overflow: hidden;
         width: 100%;
+        height: 60px;
         &-shape {
             fill: #fcfcfc;
         }

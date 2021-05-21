@@ -1,11 +1,23 @@
-.margin-bottom-small{
+.margin-bottom-small {
     margin-bottom: $small !important;
 }
 
-.margin-bottom-medium{
+.margin-bottom-medium {
     margin-bottom: $medium !important;
 }
 
-.margin-bottom-large{
+.margin-bottom-large {
     margin-bottom: $large !important;
+}
+
+.font-size-small {
+    font-size: $small !important;
+}
+
+.font-size-medium {
+    font-size: $medium !important;
+}
+
+.font-size-large {
+    font-size: $large !important;
 }
