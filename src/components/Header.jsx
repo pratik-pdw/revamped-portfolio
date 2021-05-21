@@ -23,7 +23,7 @@ function Header() {
                     className="header__curve-shape"></path>
             </svg>
             <div className="header__content">
-                <h1 className="heading-primary">
+                <h1 className="heading-primary margin-bottom-small">
                     <span
                         href="#"
                         ref={elRef}
@@ -36,7 +36,7 @@ function Header() {
                 <p className="header__desc">A Computer Engineering Graduate. Front End Developer at TCS. Worked on various design systems including
                 Oracle Alta UI and Material UI. I have developed applications on Angular and Ionic. I am always keen to
                 learn new technologies and keep myself updated with latest technology trends.</p>
-                <button className="btn btn-outlined">Resume</button>
+                <a href="#!" className="btn btn-outlined">Resume</a>
                 {/* <a href="#techstack">Tech</a> */}
             </div>
         </header>
