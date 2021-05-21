@@ -46,7 +46,7 @@ function Projects() {
             img: ipaddresstracker,
             siteUrl: "https://ipaddresstracker.pratikwadekar.me",
             codeLink: 'https://github.com/pratik-pdw/ip-address-tracker',
-            backgroundColor: '#e77e2e'
+            backgroundColor: '#fc296d'
         },
         {
             title: "Astrology App",
@@ -64,7 +64,7 @@ function Projects() {
             siteUrl: "https://pratik-pdw.github.io/lofi-music-app",
             img: musicapp,
             codeLink: "https://github.com/pratik-pdw/lofi-music-app",
-            backgroundColor: '#e26f70'
+            backgroundColor: '#5f1f54'
         },
     ];
 

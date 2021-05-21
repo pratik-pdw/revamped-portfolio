@@ -1,0 +1,94 @@
+$curve-height: 80px;
+
+.section-contact {
+    position: relative;
+    background-color: $color-grey-lightest;
+    // height: 100vh;
+    text-align: center;
+    padding: 3rem 5rem;
+    .curve {
+        position: absolute;
+        left: 0;
+        top: -$curve-height;
+        height: $curve-height;
+        width: 100%;
+        &-shape {
+            fill: $color-grey-lightest;
+        }
+    }
+
+    .callout {
+        display: inline-block;
+        // background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        filter: drop-shadow(0rem 1px 0.2rem rgba($color-black, 0.4));
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 22px;
+            top: 31px;
+            width: 0;
+            z-index: -1;
+            transform: rotate(-63deg);
+            border: 20px solid transparent;
+            border-top-color: $color-white;
+            border-bottom: 0;
+            border-left: 0;
+        }
+    }
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    gap: 5rem 0rem;
+
+    @include responsive(tbp) {
+        gap: 3rem 0rem;
+    }
+
+    &_item:first-child {
+        flex-basis: 100%;
+    }
+
+    &_item {
+        flex: 1;
+        // flex-basis: 33.3333%;
+
+        @include responsive(tbp) {
+            flex-basis: 50%;
+        }
+
+        @include responsive(mb) {
+            flex-basis: 100%;
+        }
+    }
+
+    &_url {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        p {
+            color: $color-grey-dark;
+        }
+    }
+    &__icon {
+        display: inline-block;
+        font-size: 4rem;
+        color: $color-tertiary;
+    }
+}
