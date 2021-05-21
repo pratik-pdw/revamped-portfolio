@@ -1,5 +1,4 @@
 import React from 'react'
-import randomcolor from 'randomcolor'
 
 import ecommerceapp from '../images/ecommerceapp.png'
 import restful from '../images/restful.png'
@@ -19,7 +18,8 @@ function Projects() {
                 "Developed a e-commerce application for a local business where manufacturers can list their products and potential buyers can raise purchase requests. This application is deployed for both IOS and Android users.",
             img: ecommerceapp,
             siteUrl: "https://theshubhammarketing.com",
-            codeLink: undefined
+            codeLink: undefined,
+            backgroundColor: '#f684ad'
         },
         {
             title: "Playjs Editor",
@@ -27,7 +27,8 @@ function Projects() {
                 "Derived an inspiration from Jupyter Notebook for Python and built a editor for javascript consisting of code cells.",
             img: playjseditor,
             siteUrl: "https://playjs.pratikwadekar.me",
-            codeLink: "https://github.com/pratik-pdw/jupyter-clone"
+            codeLink: "https://github.com/pratik-pdw/jupyter-clone",
+            backgroundColor: '#dcb927'
         },
         {
             title: "Restful API Request Builder",
@@ -35,7 +36,8 @@ function Projects() {
                 "A Postman like clone built with Angular and Bootstrap which can be used to fire GET, POST, PUT, PATCH, DELETE requests right in the browser",
             img: restful,
             siteUrl: "https://restful.pratikwadekar.me",
-            codeLink: "https://github.com/pratik-pdw/restful-api-request-builder"
+            codeLink: "https://github.com/pratik-pdw/restful-api-request-builder",
+            backgroundColor: '#33c379'
         },
         {
             title: "IP Address Tracker",
@@ -43,7 +45,8 @@ function Projects() {
                 "A challenge from frontendmentor.io. This is a react app which uses public IP and geocodes it.",
             img: ipaddresstracker,
             siteUrl: "https://ipaddresstracker.pratikwadekar.me",
-            codeLink: 'https://github.com/pratik-pdw/ip-address-tracker'
+            codeLink: 'https://github.com/pratik-pdw/ip-address-tracker',
+            backgroundColor: '#e77e2e'
         },
         {
             title: "Astrology App",
@@ -52,6 +55,7 @@ function Projects() {
             siteUrl: "https://pratik-pdw.github.io/react-astrology",
             codeLink: "https://github.com/pratik-pdw/react-astrology",
             img: astrology,
+            backgroundColor: '#0088b7'
         },
         {
             title: "Lofi Music App",
@@ -59,7 +63,8 @@ function Projects() {
                 "Want to hear some lofi music beats ? An application built using React Hooks lets you hear to some lofi beats by Chillhop",
             siteUrl: "https://pratik-pdw.github.io/lofi-music-app",
             img: musicapp,
-            codeLink: "https://github.com/pratik-pdw/lofi-music-app"
+            codeLink: "https://github.com/pratik-pdw/lofi-music-app",
+            backgroundColor: '#e26f70'
         },
     ];
 
@@ -72,7 +77,7 @@ function Projects() {
                 {
                     projects.map(project => {
                         return <div className="card" key={project.title}>
-                            <div style={{ background: randomcolor({ luminosity: 'random', hue: 'random' }) }} className="card__imgplaceholder margin-bottom-small">
+                            <div style={{ background: project.backgroundColor }} className="card__imgplaceholder margin-bottom-small">
                                 {project.img && <img src={project.img} alt={`Logo for ${project.title}`} />}
                                 {!project.img && <p>No Image Preview Available</p>}
                             </div>
