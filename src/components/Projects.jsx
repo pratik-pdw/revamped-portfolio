@@ -7,6 +7,10 @@ import astrology from '../images/astrologyapp.png'
 import musicapp from '../images/musicapp.png'
 import playjseditor from '../images/playjseditor.png'
 import ipaddresstracker from '../images/ipaddresstracker.png'
+
+//icons
+import { FaExternalLinkAlt, FaCode, FaLock } from 'react-icons/fa'
+
 function Projects() {
     const projects = [
         {
@@ -14,42 +18,48 @@ function Projects() {
             description:
                 "Developed a e-commerce application for a local business where manufacturers can list their products and potential buyers can raise purchase requests. This application is deployed for both IOS and Android users.",
             img: ecommerceapp,
-            link: "https://theshubhammarketing.com",
+            siteUrl: "https://theshubhammarketing.com",
+            codeLink: undefined
         },
         {
             title: "Playjs Editor",
             description:
                 "Derived an inspiration from Jupyter Notebook for Python and built a editor for javascript consisting of code cells.",
             img: playjseditor,
-            link: "https://playjs.pratikwadekar.me",
+            siteUrl: "https://playjs.pratikwadekar.me",
+            codeLink: "https://github.com/pratik-pdw/jupyter-clone"
         },
         {
             title: "Restful API Request Builder",
             description:
                 "A Postman like clone built with Angular and Bootstrap which can be used to fire GET, POST, PUT, PATCH, DELETE requests right in the browser",
             img: restful,
-            link: "https://restful.pratikwadekar.me",
+            siteUrl: "https://restful.pratikwadekar.me",
+            codeLink: "https://github.com/pratik-pdw/restful-api-request-builder"
         },
         {
             title: "IP Address Tracker",
             description:
-                "A challenge from frontend mentor. This is a react app which can be uses public IP and geocodes it.",
+                "A challenge from frontendmentor.io. This is a react app which uses public IP and geocodes it.",
             img: ipaddresstracker,
-            link: "https://ipaddresstracker.pratikwadekar.me",
+            siteUrl: "https://ipaddresstracker.pratikwadekar.me",
+            codeLink: 'https://github.com/pratik-pdw/ip-address-tracker'
         },
         {
             title: "Astrology App",
             description:
                 "A astrology app built using React and Bootstrap which lets you see your horoscope for today, yesterday and tommorrow",
-            link: "https://pratik-pdw.github.io/react-astrology",
+            siteUrl: "https://pratik-pdw.github.io/react-astrology",
+            codeLink: "https://github.com/pratik-pdw/react-astrology",
             img: astrology,
         },
         {
             title: "Lofi Music App",
             description:
                 "Want to hear some lofi music beats ? An application built using React Hooks lets you hear to some lofi beats by Chillhop",
-            link: "https://pratik-pdw.github.io/lofi-music-app",
+            siteUrl: "https://pratik-pdw.github.io/lofi-music-app",
             img: musicapp,
+            codeLink: "https://github.com/pratik-pdw/lofi-music-app"
         },
     ];
 
@@ -68,7 +78,11 @@ function Projects() {
                             </div>
                             <h3 className="font-size-small card__title heading-tertiary">{project.title}</h3>
                             <p className="card__description">{project.description}</p>
-                            {/* <a className="card__link btn" href="#!">Visit</a> */}
+                            <div className="card__links">
+                                {project.codeLink && <a target="_blank" rel="noreferrer" href={project.codeLink}><FaCode /><span>Repo</span></a>}
+                                {!project.codeLink && <a href={project.codeLink}><FaLock /><span>Repo</span></a>}
+                                <a target="_blank" rel="noreferrer" href={project.siteUrl}><span className="live">Live</span><FaExternalLinkAlt /></a>
+                            </div>
                         </div>
                     })
                 }

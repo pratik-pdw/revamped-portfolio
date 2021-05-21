@@ -12,7 +12,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-    grid-auto-rows: minmax(500px, auto);
+    grid-auto-rows: minmax(550px, auto);
     gap: 2rem;
 
     @include responsive(mb) {
@@ -29,7 +29,7 @@
     border: 2px solid transparent;
     background-clip: padding-box;
     padding: 1rem;
-
+    overflow: hidden;
     &__imgplaceholder {
         width: 100%;
         height: 53%;
@@ -66,10 +66,49 @@
             font-size: 1.4rem;
         }
     }
+
+    &__links {
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $color-grey-dark;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 0rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: $color-white;
+
+            span {
+                display: inline-block;
+                padding: 0rem 1rem;
+                position: relative;
+            }
+
+            .live::after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                background-color: $color-lime;
+                left: -10px;
+                top: 50%;
+                border-radius: 100%;
+                box-shadow: 0px 1px 1rem rgba($color-lime, 0.4);
+                transform: translateY(-50%);
+            }
+        }
+    }
 }
 
 .card:hover .card__imgplaceholder img {
-    transform: scale(1.1) translate(0px, 0px);
+    transform: scale(1.2) translate(0px, 0px);
 
     @include responsive(tbp) {
         transform: rotate(-10deg) translate(50px, 50px);
