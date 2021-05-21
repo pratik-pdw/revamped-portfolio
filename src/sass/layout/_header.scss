@@ -46,10 +46,6 @@
         @include responsive(tbp) {
             font-size: 1.6rem;
         }
-
-        @include responsive(mb) {
-            font-size: 1.4rem;
-        }
     }
 
     &__typewriter {
