@@ -1,0 +1,159 @@
+.footer {
+  background-color: #082e43;
+  position: relative;
+  padding: 15rem 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  color: $color-grey-lightest;
+  font-size: 1.6rem;
+
+  @include responsive(tbp) {
+    padding: 15rem 3rem;
+    padding-bottom: 10rem;
+  }
+
+  @include responsive(mb) {
+    padding: 15rem 2rem;
+    padding-bottom: 5rem;
+  }
+
+  &__curve {
+    width: 100%;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    height: 80px;
+
+    &-shape {
+      fill: $color-grey-lightest;
+    }
+  }
+
+  &__logo {
+    &:visited,
+    &:link {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 2rem;
+      font-family: inherit;
+      color: transparent;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary,
+        $color-secondary
+      );
+      background-clip: text;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__icon {
+    font-size: 3rem;
+    margin: 0rem 0.5rem;
+  }
+
+  &__tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem;
+  }
+
+  &__box {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @include responsive(tbp) {
+      flex-direction: column;
+      gap: 2rem 0rem;
+    }
+  }
+
+  &__links {
+    ul {
+      list-style: none;
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+
+      li {
+        // margin: 0rem 1rem;
+      }
+      li > a {
+        display: inline-block;
+        text-decoration: none;
+        transition: all 0.2s;
+        padding: 0rem 1rem;
+        border-radius: 50px;
+
+        &:visited,
+        &:link {
+          color: $color-grey-lightest;
+        }
+
+        &:hover {
+          background-image: linear-gradient(
+            to right bottom,
+            $color-primary,
+            $color-secondary
+          );
+          transform: rotate(-10deg) scale(1.2);
+          @include responsive(tbp) {
+            transform: none;
+            background-image: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__links,
+  &__content {
+    flex-basis: 40%;
+    padding-top: 2rem;
+    border-top: 1px solid $color-secondary;
+
+    @include responsive(tbp) {
+      border-top: none;
+    }
+  }
+}
+
+.animateScale {
+  animation: animateHeart 0.8s ease-in-out infinite alternate;
+}
+@keyframes animateHeart {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.animateRotate {
+  animation: animateReactIcon 1s ease-in-out infinite;
+}
+@keyframes animateReactIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animateBounce {
+  animation: animateSassIcon 1s ease-in-out infinite alternate;
+}
+@keyframes animateSassIcon {
+  0% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
