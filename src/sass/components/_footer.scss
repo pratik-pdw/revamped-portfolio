@@ -79,6 +79,10 @@
       display: flex;
       justify-content: space-evenly;
 
+      @include responsive(mb) {
+        flex-direction: column;
+      }
+
       li {
         // margin: 0rem 1rem;
       }

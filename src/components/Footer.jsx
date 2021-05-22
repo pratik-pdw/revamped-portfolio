@@ -3,8 +3,17 @@ import { InlineIcon } from "@iconify/react";
 import redHeart from "@iconify-icons/noto-v1/red-heart";
 import reactIcon from "@iconify-icons/vscode-icons/file-type-reactjs";
 import sassIcon from "@iconify-icons/vscode-icons/file-type-sass";
+
+import { Link } from "react-scroll";
+
 function Footer() {
   const footerLogo = "<pratikwadekar.me />";
+  const navLinks = [
+    { label: "Home", sectionId: "home", offset: 0 },
+    { label: "Tech Stack", sectionId: "techstack", offset: 0 },
+    { label: "My Work", sectionId: "mywork", offset: 0 },
+    { label: "Contact Me", sectionId: "contact-me", offset: 0 },
+  ];
   return (
     <footer className="footer">
       <svg
@@ -20,24 +29,33 @@ function Footer() {
         ></path>
       </svg>
 
-      <a href="#home" className="footer__logo margin-bottom-large">
+      <Link
+        smooth
+        href="home"
+        to="home"
+        className="footer__logo margin-bottom-large"
+      >
         {footerLogo}
-      </a>
+      </Link>
       <div className="footer__box">
         <div className="footer__links">
           <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#techstack">Tech Stack</a>
-            </li>
-            <li>
-              <a href="#mywork">My Work</a>
-            </li>
-            <li>
-              <a href="#contact-me">Contact Me</a>
-            </li>
+            {React.Children.toArray(
+              navLinks.map((navlink) => {
+                return (
+                  <li className="navigation__item">
+                    <Link
+                      smooth
+                      offset={navlink.offset}
+                      href={navlink.sectionId}
+                      to={navlink.sectionId}
+                    >
+                      {navlink.label}
+                    </Link>
+                  </li>
+                );
+              })
+            )}
           </ul>
         </div>
 

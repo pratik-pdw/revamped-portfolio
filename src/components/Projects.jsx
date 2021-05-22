@@ -1,11 +1,11 @@
 import React from "react";
 
-import ecommerceapp from "../images/ecommerceapp.png";
-import restful from "../images/restful.png";
-import astrology from "../images/astrologyapp.png";
-import musicapp from "../images/musicapp.png";
-import playjseditor from "../images/playjseditor.png";
-import ipaddresstracker from "../images/ipaddresstracker.png";
+import ecommerceapp from "../assets/ecommerceapp.png";
+import restful from "../assets/restful.png";
+import astrology from "../assets/astrologyapp.png";
+import musicapp from "../assets/musicapp.png";
+import playjseditor from "../assets/playjseditor.png";
+import ipaddresstracker from "../assets/ipaddresstracker.png";
 
 //icons
 import { FaExternalLinkAlt, FaCode, FaLock } from "react-icons/fa";

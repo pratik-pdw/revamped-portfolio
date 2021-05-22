@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-
+import { Link } from "react-scroll";
 function Navbar() {
   const checkboxRef = useRef();
   const navLinks = [
-    { label: "Home", sectionId: "#home" },
-    { label: "Tech Stack", sectionId: "#techstack" },
-    { label: "My Work", sectionId: "#mywork" },
-    { label: "Contact Me", sectionId: "#contact-me" },
+    { label: "Home", sectionId: "home", offset: 0 },
+    { label: "Tech Stack", sectionId: "techstack", offset: 0 },
+    { label: "My Work", sectionId: "mywork", offset: 0 },
+    { label: "Contact Me", sectionId: "contact-me", offset: 0 },
   ];
   return (
     <div className="navigation">
@@ -26,15 +26,19 @@ function Navbar() {
             navLinks.map((navlink) => {
               return (
                 <li className="navigation__item">
-                  <a
+                  <Link
+                    smooth
+                    offset={navlink.offset}
+                    delay={1000}
                     onClick={() => {
                       checkboxRef.current.click();
                     }}
                     href={navlink.sectionId}
                     className="btn navigation__navlink"
+                    to={navlink.sectionId}
                   >
                     {navlink.label}
-                  </a>
+                  </Link>
                 </li>
               );
             })

@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import Typewriter from "../custom-animations/Typewriter";
-
 function Header() {
   const elRef = useRef();
 
@@ -47,7 +46,7 @@ function Header() {
           trends.
         </p>
 
-        <a href="#!" className="btn btn-outlined">
+        <a download href="/assets/Resume.pdf" className="btn btn-outlined">
           Resume
         </a>
 
