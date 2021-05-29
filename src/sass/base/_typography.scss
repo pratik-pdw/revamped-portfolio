@@ -1,97 +1,110 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: "Itim", "sans-serif";
-    font-weight: 400;
-    line-height: 1.6;
-    font-size: 1.6rem;
+  font-family: "Itim", "sans-serif";
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
 }
 
 .heading-primary {
-    font-family: "Pacifico";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 4rem;
-    text-shadow: 0px 1px 0.1rem rgba(0, 0, 0, 0.5);
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4rem;
+  text-shadow: 0px 1px 0.1rem rgba(0, 0, 0, 0.5);
 
-    @include responsive(tbp) {
-        font-size: 3.5rem;
-    }
+  @include responsive(tbp) {
+    font-size: 3.5rem;
+  }
 
-    @include responsive(mb) {
-        font-size: 3rem;
-    }
+  @include responsive(mb) {
+    font-size: 3rem;
+  }
 }
 
 .heading-secondary {
-    display: inline-block;
-    font-family: "Pacifico";
-    font-weight: 400;
-    font-size: 3.2rem;
-    background-image: linear-gradient(112.28deg, $color-primary 11.42%, $color-secondary 77.31%);
-    color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    position: relative;
+  display: inline-block;
+  font-family: "Pacifico";
+  font-weight: 400;
+  font-size: 3.2rem;
+  background-image: linear-gradient(
+    112.28deg,
+    $color-primary 11.42%,
+    $color-secondary 77.31%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  position: relative;
 
-    &::after,
-    &::before {
-        content: "";
-        width: 50px;
-        height: 1.5px;
-        background: $color-grey-light;
-        position: absolute;
-    }
-    &::after {
-        top: 50%;
-        left: 100%;
-        margin-left: 10px;
-    }
+  &::after,
+  &::before {
+    content: "";
+    width: 50px;
+    height: 1.5px;
+    background: $color-grey-light;
+    position: absolute;
+  }
+  &::after {
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+  }
 
-    &::before {
-        top: 50%;
-        right: 100%;
-        margin-right: 10px;
-    }
+  &::before {
+    top: 50%;
+    right: 100%;
+    margin-right: 10px;
+  }
 }
 
 .heading-secondary-light {
-    color: $color-white;
+  color: $color-white;
 
-    &::after,
-    &::before {
-        background: $color-white;
-    }
+  &::after,
+  &::before {
+    background: $color-white;
+  }
+}
+
+.heading-secondary-dark {
+  color: $color-tertiary-dark;
+
+  &::after,
+  &::before {
+    background: $color-tertiary-dark;
+  }
 }
 
 .heading-tertiary {
-    font-size: 2rem;
-    display: inline-block;
-    padding: 0rem 2rem;
-    border-radius: 50px;
-    color: $color-white;
-    transform: rotate(-5deg);
-    margin-bottom: 1rem;
-    background: linear-gradient(to right, $color-primary, $color-secondary);
-    transform-origin: left;
-    transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    cursor: pointer;
-    backface-visibility: hidden;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 0rem 2rem;
+  border-radius: 50px;
+  color: $color-white;
+  transform: rotate(-5deg);
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, $color-primary, $color-secondary);
+  transform-origin: left;
+  transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  cursor: pointer;
+  backface-visibility: hidden;
 
-    @include responsive(tbp) {
-        font-size: 2.2rem;
-    }
+  @include responsive(tbp) {
+    font-size: 2.2rem;
+  }
 
-    @include responsive(mb) {
-        font-size: 1.8rem;
-    }
+  @include responsive(mb) {
+    font-size: 1.8rem;
+  }
 
-    &:hover {
-        transform: rotate(0deg);
-    }
+  &:hover {
+    transform: rotate(0deg);
+  }
 }

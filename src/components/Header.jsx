@@ -46,7 +46,7 @@ function Header() {
           trends.
         </p>
 
-        <a download href="/assets/Resume.pdf" className="btn btn-outlined">
+        <a download href="/assets/Resume.pdf" className="btn-resume">
           Resume
         </a>
 

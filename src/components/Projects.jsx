@@ -6,6 +6,7 @@ import astrology from "../assets/astrologyapp.png";
 import musicapp from "../assets/musicapp.png";
 import playjseditor from "../assets/playjseditor.png";
 import ipaddresstracker from "../assets/ipaddresstracker.png";
+// import noteify from "../assets/noteify.PNG";
 
 //icons
 import { FaExternalLinkAlt, FaCode, FaLock } from "react-icons/fa";
@@ -39,6 +40,15 @@ function Projects() {
       codeLink: "https://github.com/pratik-pdw/restful-api-request-builder",
       backgroundColor: "#33c379",
     },
+    // {
+    //   title: "Noteify",
+    //   description:
+    //     "A Google Keep like clone for taking notes. This is built using React-Redux, Material UI and Firebase.",
+    //   img: noteify,
+    //   siteUrl: "https://noteify.pratikwadekar.me",
+    //   codeLink: "https://github.com/pratik-pdw/material-ui-notes-redux",
+    //   backgroundColor: "#33c379",
+    // },
     {
       title: "IP Address Tracker",
       description:
@@ -70,7 +80,7 @@ function Projects() {
 
   return (
     <div id="mywork" className="section-projects">
-      <h3 className="heading-secondary heading-secondary-light margin-bottom-large">
+      <h3 className="heading-secondary heading-secondary-dark margin-bottom-large">
         My Work
       </h3>
       <div className="grid">

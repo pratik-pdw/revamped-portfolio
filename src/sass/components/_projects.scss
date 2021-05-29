@@ -22,7 +22,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-auto-rows: minmax(580px, auto);
+  grid-auto-rows: minmax(550px, auto);
   gap: 2rem;
 
   @include responsive(tbp) {
