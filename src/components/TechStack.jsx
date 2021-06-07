@@ -30,15 +30,15 @@ function TechStack() {
             about basics of HTML and CSS. To be frank, I jumped on Angular
             before understanding the fundamentals of Javascript. Sooner I
             started to face challenges 🐣🤦‍♂️ writing code in Angular which pushed
-            me to learn Vanilla JS. Thanks to Brad's Modern Javascript Course.
-            After getting my hands dirty with JS, I revisited Angular and spent
-            some time exploring features of typescript. Developed some
-            applications which included Firebase backend and serverless firebase
-            functions written in Node. After Learning Angular it was obvious
-            that I would go to Ionic for Mobile Applications. Recently I figured
-            out that React.JS is emerging to be popular amongst frontend
-            frameworks. So I did my certification in React from Edureka. Now I
-            spend most of my time with React and SASS.
+            me to learn Vanilla JS. ⭐ Thanks to Brad Traversy's Modern
+            Javascript Course. After getting my hands dirty with JS, I revisited
+            Angular and spent some time exploring🧐 features of Typescript.
+            👩‍💻Developed some applications which included Firebase backend and
+            serverless firebase functions written in Node. After Learning
+            Angular it was obvious that I would go to Ionic for Mobile
+            Applications. Recently I figured out that React.JS is emerging to be
+            popular amongst frontend frameworks. So I did my certification in
+            React from Edureka. Now I spend most of my time with React and SASS.
           </p>
         </div>
         <div className="box__right">
