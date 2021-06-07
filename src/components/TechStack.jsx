@@ -31,7 +31,7 @@ function TechStack() {
             before understanding the fundamentals of Javascript. Sooner I
             started to face challenges 🐣🤦‍♂️ writing code in Angular which pushed
             me to learn Vanilla JS. Thanks to Brad's Modern Javascript Course.
-            After getting my hands dirty on JS, I revisited Angular and spent
+            After getting my hands dirty with JS, I revisited Angular and spent
             some time exploring features of typescript. Developed some
             applications which included Firebase backend and serverless firebase
             functions written in Node. After Learning Angular it was obvious

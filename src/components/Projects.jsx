@@ -18,7 +18,8 @@ function Projects() {
       description:
         "Developed a e-commerce application for a local business where manufacturers can list their products and potential buyers can raise purchase requests. This application is deployed for both IOS and Android users.",
       img: ecommerceapp,
-      siteUrl: "https://theshubhammarketing.com/login",
+      siteUrl:
+        "https://play.google.com/store/apps/details?id=com.theshubhammarketing.tsmusers",
       codeLink: undefined,
       backgroundColor: "#f684ad",
     },
