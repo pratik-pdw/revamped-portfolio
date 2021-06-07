@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Zoom, Slide } from "react-awesome-reveal";
 function Contact() {
   const socialLinks = [
     {
@@ -44,25 +44,30 @@ function Contact() {
           className="curve-shape"
         ></path>
       </svg>
-      <h3 className="heading-secondary margin-bottom-large">Contact Me</h3>
+      <Slide direction="down">
+        <h3 className="heading-secondary margin-bottom-large">Contact Me</h3>
+      </Slide>
       <br />
-      <p className="callout">I prefer texting over calling...</p>
-
+      <Zoom delay={1000}>
+        <p className="callout">I prefer texting over calling...</p>
+      </Zoom>
       <ul className="links">
         {socialLinks.map((link) => {
           return (
-            <li key={link.url} className="links_item">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                className="links_url"
-                href={link.isMail ? "mailto:" + link.url : link.url}
-              >
-                {" "}
-                <span className="links__icon">{link.icon}</span>
-                <p>{link.username}</p>
-              </a>
-            </li>
+            <Zoom cascade delay={2000}>
+              <li key={link.url} className="links_item">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  className="links_url"
+                  href={link.isMail ? "mailto:" + link.url : link.url}
+                >
+                  {" "}
+                  <span className="links__icon">{link.icon}</span>
+                  <p>{link.username}</p>
+                </a>
+              </li>
+            </Zoom>
           );
         })}
       </ul>

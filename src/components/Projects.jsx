@@ -7,7 +7,7 @@ import musicapp from "../assets/musicapp.png";
 import playjseditor from "../assets/playjseditor.png";
 import ipaddresstracker from "../assets/ipaddresstracker.png";
 // import noteify from "../assets/noteify.PNG";
-
+import { Zoom, Slide } from "react-awesome-reveal";
 //icons
 import { FaExternalLinkAlt, FaCode, FaLock } from "react-icons/fa";
 
@@ -81,47 +81,55 @@ function Projects() {
 
   return (
     <div id="mywork" className="section-projects">
-      <h3 className="heading-secondary heading-secondary-dark margin-bottom-large">
-        My Work
-      </h3>
+      <Slide direction="down">
+        <h3 className="heading-secondary heading-secondary-dark margin-bottom-large">
+          My Work
+        </h3>
+      </Slide>
       <div className="grid">
-        {projects.map((project) => {
-          return (
-            <div className="card" style={{ height: "99%" }} key={project.title}>
+        <Zoom cascade>
+          {projects.map((project) => {
+            return (
               <div
-                style={{ background: project.backgroundColor }}
-                className="card__imgplaceholder margin-bottom-small"
+                className="card"
+                style={{ height: "99%" }}
+                key={project.title}
               >
-                {project.img && (
-                  <img src={project.img} alt={`Logo for ${project.title}`} />
-                )}
-                {!project.img && <p>No Image Preview Available</p>}
-              </div>
-              <h3 className="font-size-small card__title heading-tertiary">
-                {project.title}
-              </h3>
-              <p className="card__description">{project.description}</p>
-              <div className="card__links">
-                {project.codeLink && (
-                  <a target="_blank" rel="noreferrer" href={project.codeLink}>
-                    <FaCode />
-                    <span>Repo</span>
+                <div
+                  style={{ background: project.backgroundColor }}
+                  className="card__imgplaceholder margin-bottom-small"
+                >
+                  {project.img && (
+                    <img src={project.img} alt={`Logo for ${project.title}`} />
+                  )}
+                  {!project.img && <p>No Image Preview Available</p>}
+                </div>
+                <h3 className="font-size-small card__title heading-tertiary">
+                  {project.title}
+                </h3>
+                <p className="card__description">{project.description}</p>
+                <div className="card__links">
+                  {project.codeLink && (
+                    <a target="_blank" rel="noreferrer" href={project.codeLink}>
+                      <FaCode />
+                      <span>Repo</span>
+                    </a>
+                  )}
+                  {!project.codeLink && (
+                    <a href={project.codeLink}>
+                      <FaLock />
+                      <span>Repo</span>
+                    </a>
+                  )}
+                  <a target="_blank" rel="noreferrer" href={project.siteUrl}>
+                    <span className="live">Live</span>
+                    <FaExternalLinkAlt />
                   </a>
-                )}
-                {!project.codeLink && (
-                  <a href={project.codeLink}>
-                    <FaLock />
-                    <span>Repo</span>
-                  </a>
-                )}
-                <a target="_blank" rel="noreferrer" href={project.siteUrl}>
-                  <span className="live">Live</span>
-                  <FaExternalLinkAlt />
-                </a>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </Zoom>
       </div>
     </div>
   );
