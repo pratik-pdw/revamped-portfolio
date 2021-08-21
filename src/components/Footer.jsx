@@ -77,8 +77,8 @@ function Footer() {
           </p>
           <br />
           <p>
-            Copyright Issues? <br /> Hell No !! Feel free to use this design.{" "}
-            <br /> Ping me if you need help
+            Copyright Issues? <br /> Hell No !! It's all yours{" "}
+            <br /> Connect with me for your queries.
           </p>
         </div>
       </div>
