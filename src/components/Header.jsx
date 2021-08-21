@@ -44,10 +44,9 @@ function Header() {
 
         <Slide direction="up" duration={1000}>
           <p className="header__desc">
-            A Computer Engineering Graduate. Front End Developer at TCS. Worked
-            on various design systems including Oracle Alta UI and Material UI.
-            I have developed applications on Angular and Ionic. I am always keen
-            to learn new technologies and keep myself updated with latest
+            A Computer Engineering Graduate. Senior Software Engineer at Globant. Worked with various Frontend Technologies including React and Angular. 
+            Designed and developed applications on design systems involving Oracle Alta UI and Material UI. I am always keen
+            to learn new things and keep myself updated with latest
             technology trends.
           </p>
         </Slide>
