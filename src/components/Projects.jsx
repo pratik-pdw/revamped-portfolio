@@ -6,7 +6,8 @@ import astrology from "../assets/astrologyapp.png";
 import musicapp from "../assets/musicapp.png";
 import playjseditor from "../assets/playjseditor.png";
 import ipaddresstracker from "../assets/ipaddresstracker.png";
-// import noteify from "../assets/noteify.PNG";
+import noteify from "../assets/noteify.PNG";
+import fmentortodoapp from "../assets/fmentortodoapp.jpg";
 import { Zoom, Slide } from "./Animations";
 //icons
 import { FaExternalLinkAlt, FaCode, FaLock } from "react-icons/fa";
@@ -41,15 +42,15 @@ function Projects() {
       codeLink: "https://github.com/pratik-pdw/restful-api-request-builder",
       backgroundColor: "#33c379",
     },
-    // {
-    //   title: "Noteify",
-    //   description:
-    //     "A Google Keep like clone for taking notes. This is built using React-Redux, Material UI and Firebase.",
-    //   img: noteify,
-    //   siteUrl: "https://noteify.pratikwadekar.me",
-    //   codeLink: "https://github.com/pratik-pdw/material-ui-notes-redux",
-    //   backgroundColor: "#33c379",
-    // },
+    {
+      title: "Noteify",
+      description:
+        "A Google Keep like clone for taking notes. This is built using React-Redux, Material UI and Firebase.",
+      img: noteify,
+      siteUrl: "https://noteify.pratikwadekar.me",
+      codeLink: "https://github.com/pratik-pdw/material-ui-notes-redux",
+      backgroundColor: "#33c379",
+    },
     {
       title: "IP Address Tracker",
       description:
@@ -58,6 +59,15 @@ function Projects() {
       siteUrl: "https://ipaddresstracker.pratikwadekar.me",
       codeLink: "https://github.com/pratik-pdw/ip-address-tracker",
       backgroundColor: "#fc296d",
+    },
+    {
+      title: "Todo App",
+      description:
+        "Another challenge from frontendmentor.io. This is a todo app with a little twist. You can drag the todos to reorder them",
+      img: fmentortodoapp,
+      siteUrl: "https://fmentor-todo-app-pdw.netlify.app",
+      codeLink: "https://github.com/pratik-pdw/fmentor-todo-app",
+      backgroundColor: "#b2a7f6",
     },
     {
       title: "Astrology App",
