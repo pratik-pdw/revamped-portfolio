@@ -69,7 +69,7 @@
       transition: all 0.2s;
       top: 0;
       left: 0;
-      transform: rotate(-10deg) translate(50px, 50px);
+      transform: rotate(-10deg) translate(50px, 60px);
     }
   }
 
@@ -122,10 +122,10 @@
   }
 }
 
-.card:hover .card__imgplaceholder img {
-  transform: scale(1.2) translate(0px, 0px);
+// .card:hover .card__imgplaceholder img {
+//   transform: scale(1.2) translate(0px, 0px);
 
-  @include responsive(tbp) {
-    transform: rotate(-10deg) translate(50px, 50px);
-  }
-}
+//   @include responsive(tbp) {
+//     transform: rotate(-10deg) translate(50px, 50px);
+//   }
+// }
