@@ -1,5 +1,5 @@
 import React from "react";
-import { Zoom, Slide } from "react-awesome-reveal";
+import { Zoom, Slide } from "./Animations";
 function Contact() {
   const socialLinks = [
     {

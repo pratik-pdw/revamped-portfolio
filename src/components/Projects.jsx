@@ -7,7 +7,7 @@ import musicapp from "../assets/musicapp.png";
 import playjseditor from "../assets/playjseditor.png";
 import ipaddresstracker from "../assets/ipaddresstracker.png";
 // import noteify from "../assets/noteify.PNG";
-import { Zoom, Slide } from "react-awesome-reveal";
+import { Zoom, Slide } from "./Animations";
 //icons
 import { FaExternalLinkAlt, FaCode, FaLock } from "react-icons/fa";
 

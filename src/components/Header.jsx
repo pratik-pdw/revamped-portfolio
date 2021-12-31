@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Slide, Bounce } from "react-awesome-reveal";
+import { Slide, Bounce } from "./Animations";
 function Header() {
   // const elRef = useRef();
 

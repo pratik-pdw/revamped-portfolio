@@ -13,7 +13,7 @@ import nodejsIcon from "@iconify-icons/logos/nodejs";
 import mongodbIcon from "@iconify-icons/logos/mongodb";
 
 import flexedBiceps from "@iconify-icons/noto-v1/flexed-biceps";
-import { Zoom, Slide } from "react-awesome-reveal";
+import { Zoom, Slide } from "./Animations";
 
 function TechStack() {
   return (
@@ -24,7 +24,7 @@ function TechStack() {
       <div className="box">
         <div className="box__left">
           <Slide>
-            <h3 className="heading-tertiary font-size-medium">
+            <h3 className="heading-tertiary font-size-small">
               Frontend is my FORTE! <Icon icon={flexedBiceps} />
             </h3>
             <p>
