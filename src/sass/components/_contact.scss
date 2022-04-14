@@ -88,10 +88,10 @@ $curve-height: 80px;
       color: $color-grey-dark;
     }
   }
-  &__icon i {
+  &__icon svg {
     display: inline-block;
     font-size: 4rem;
-    color: transparent;
+    color: $color-primary;
     background-image: linear-gradient(
       to right bottom,
       $color-primary,
