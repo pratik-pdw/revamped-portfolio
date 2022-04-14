@@ -1,15 +1,8 @@
 import React from "react";
+import Image from "next/image";
 
-import ecommerceapp from "../assets/ecommerceapp.png";
-import restful from "../assets/restful.png";
-import astrology from "../assets/astrologyapp.png";
-import musicapp from "../assets/musicapp.png";
-import playjseditor from "../assets/playjseditor.png";
-import ipaddresstracker from "../assets/ipaddresstracker.png";
-import noteify from "../assets/noteify.PNG";
-import fmentortodoapp from "../assets/fmentortodoapp.jpg";
 import { Zoom, Slide } from "./Animations";
-//icons
+
 import { FaExternalLinkAlt, FaCode, FaLock } from "react-icons/fa";
 
 function Projects() {
@@ -18,7 +11,7 @@ function Projects() {
       title: "IONIC App for Local Business",
       description:
         "Developed a e-commerce application for a local business where manufacturers can list their products and potential buyers can raise purchase requests. This application is deployed for both IOS and Android users.",
-      img: ecommerceapp,
+      img: "ecommerceapp.png",
       siteUrl:
         "https://play.google.com/store/apps/details?id=com.theshubhammarketing.tsmusers",
       codeLink: undefined,
@@ -28,7 +21,7 @@ function Projects() {
       title: "Playjs Editor",
       description:
         "Derived an inspiration from Jupyter Notebook for Python and built a editor for javascript consisting of code cells.",
-      img: playjseditor,
+      img: "playjseditor.png",
       siteUrl: "https://playjs.pratikwadekar.me",
       codeLink: "https://github.com/pratik-pdw/jupyter-clone",
       backgroundColor: "#dcb927",
@@ -37,7 +30,7 @@ function Projects() {
       title: "Restful API Request Builder",
       description:
         "A Postman like clone built with Angular and Bootstrap which can be used to fire GET, POST, PUT, PATCH, DELETE requests right in the browser",
-      img: restful,
+      img: "restful.png",
       siteUrl: "https://restful.pratikwadekar.me",
       codeLink: "https://github.com/pratik-pdw/restful-api-request-builder",
       backgroundColor: "#33c379",
@@ -46,7 +39,7 @@ function Projects() {
       title: "Noteify",
       description:
         "A Google Keep like clone for taking notes. This is built using React-Redux, Material UI and Firebase.",
-      img: noteify,
+      img: "noteify.png",
       siteUrl: "https://noteify.pratikwadekar.me",
       codeLink: "https://github.com/pratik-pdw/material-ui-notes-redux",
       backgroundColor: "#33c379",
@@ -55,7 +48,7 @@ function Projects() {
       title: "IP Address Tracker",
       description:
         "A challenge from frontendmentor.io. This is a react app which uses public IP and geocodes it.",
-      img: ipaddresstracker,
+      img: "ipaddresstracker.png",
       siteUrl: "https://ipaddresstracker.pratikwadekar.me",
       codeLink: "https://github.com/pratik-pdw/ip-address-tracker",
       backgroundColor: "#fc296d",
@@ -64,7 +57,7 @@ function Projects() {
       title: "Todo App",
       description:
         "Another challenge from frontendmentor.io. This is a todo app with a little twist. You can drag the todos to reorder them",
-      img: fmentortodoapp,
+      img: "fmentortodoapp.jpg",
       siteUrl: "https://fmentor-todo-app-pdw.netlify.app",
       codeLink: "https://github.com/pratik-pdw/fmentor-todo-app",
       backgroundColor: "#b2a7f6",
@@ -75,7 +68,7 @@ function Projects() {
         "A astrology app built using React and Bootstrap which lets you see your horoscope for today, yesterday and tommorrow",
       siteUrl: "https://pratik-pdw.github.io/react-astrology",
       codeLink: "https://github.com/pratik-pdw/react-astrology",
-      img: astrology,
+      img: "astrologyapp.png",
       backgroundColor: "#0088b7",
     },
     {
@@ -83,7 +76,7 @@ function Projects() {
       description:
         "Want to hear some lofi music beats ? An application built using React Hooks lets you hear to some lofi beats by Chillhop",
       siteUrl: "https://pratik-pdw.github.io/lofi-music-app",
-      img: musicapp,
+      img: "musicapp.png",
       codeLink: "https://github.com/pratik-pdw/lofi-music-app",
       backgroundColor: "#5f1f54",
     },
@@ -110,7 +103,10 @@ function Projects() {
                   className="card__imgplaceholder margin-bottom-small"
                 >
                   {project.img && (
-                    <img src={project.img} alt={`Logo for ${project.title}`} />
+                    <img
+                      src={`/images/${project.img}`}
+                      alt={`Logo for ${project.title}`}
+                    />
                   )}
                   {!project.img && <p>No Image Preview Available</p>}
                 </div>

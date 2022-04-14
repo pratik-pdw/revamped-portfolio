@@ -1,18 +1,18 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import htmlIcon from "@iconify-icons/vscode-icons/file-type-html";
-import cssIcon from "@iconify-icons/vscode-icons/file-type-css";
-import jsIcon from "@iconify-icons/logos/javascript";
+import htmlIcon from "@iconify/icons-vscode-icons/file-type-html";
+import cssIcon from "@iconify/icons-vscode-icons/file-type-css";
+import jsIcon from "@iconify/icons-logos/javascript";
 
-import angularIcon from "@iconify-icons/vscode-icons/file-type-angular";
-import reactIcon from "@iconify-icons/vscode-icons/file-type-reactjs";
-import sassIcon from "@iconify-icons/vscode-icons/file-type-sass";
+import angularIcon from "@iconify/icons-vscode-icons/file-type-angular";
+import reactIcon from "@iconify/icons-vscode-icons/file-type-reactjs";
+import sassIcon from "@iconify/icons-vscode-icons/file-type-sass";
 
-import firebaseIcon from "@iconify-icons/vscode-icons/file-type-firebase";
-import nodejsIcon from "@iconify-icons/logos/nodejs";
-import mongodbIcon from "@iconify-icons/logos/mongodb";
+import firebaseIcon from "@iconify/icons-vscode-icons/file-type-firebase";
+import nodejsIcon from "@iconify/icons-logos/nodejs";
+import mongodbIcon from "@iconify/icons-logos/mongodb";
 
-import flexedBiceps from "@iconify-icons/noto-v1/flexed-biceps";
+import flexedBiceps from "@iconify/icons-noto-v1/flexed-biceps";
 import { Zoom, Slide } from "./Animations";
 
 function TechStack() {

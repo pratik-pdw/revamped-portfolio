@@ -1,30 +1,38 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Zoom, Slide } from "./Animations";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 function Contact() {
   const socialLinks = [
     {
-      icon: <i className="fas fa-envelope"></i>,
+      icon: <FontAwesomeIcon icon={faEnvelope} />,
       url: "pratik.wadekar2810@gmail.com",
       isMail: true,
       username: "pratik.wadekar2810@gmail.com",
     },
     {
-      icon: <i className="fab fa-linkedin"></i>,
+      icon: <FontAwesomeIcon icon={faLinkedin} />,
       url: "https://linkedin.com/in/mr-pdw",
       username: "mr-pdw",
     },
     {
-      icon: <i className="fab fa-github"></i>,
+      icon: <FontAwesomeIcon icon={faGithub} />,
       url: "https://github.com/pratik-pdw",
       username: "pratik-pdw",
     },
     {
-      icon: <i className="fab fa-facebook"></i>,
+      icon: <FontAwesomeIcon icon={faFacebook} />,
       url: "https://www.facebook.com/pratikw.2810",
       username: "pratikw.2810",
     },
     {
-      icon: <i className="fab fa-instagram"></i>,
+      icon: <FontAwesomeIcon icon={faInstagram} />,
       url: "https://instagram.com/pratikwdkr",
       username: "pratikwdkr",
     },

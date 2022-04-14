@@ -1,8 +1,8 @@
 import React from "react";
 import { InlineIcon } from "@iconify/react";
-import redHeart from "@iconify-icons/noto-v1/red-heart";
-import reactIcon from "@iconify-icons/vscode-icons/file-type-reactjs";
-import sassIcon from "@iconify-icons/vscode-icons/file-type-sass";
+import redHeart from "@iconify/icons-noto-v1/red-heart";
+import reactIcon from "@iconify/icons-vscode-icons/file-type-reactjs";
+import sassIcon from "@iconify/icons-vscode-icons/file-type-sass";
 
 import { Link } from "react-scroll";
 
@@ -77,8 +77,8 @@ function Footer() {
           </p>
           <br />
           <p>
-            Copyright Issues? <br /> Hell No !! It's all yours{" "}
-            <br /> Connect with me for your queries.
+            Copyright Issues? <br /> Hell No !! It's all yours <br /> Connect
+            with me for your queries.
           </p>
         </div>
       </div>
