@@ -51,11 +51,6 @@ function Header() {
             new things and keep myself updated with latest technology trends.
           </p>
         </Slide>
-        {/* <Bounce duration={1000} delay={1000}>
-          <a download href="/assets/Resume.pdf" className="btn-resume">
-            Resume
-          </a>
-        </Bounce> */}
       </div>
     </header>
   );
