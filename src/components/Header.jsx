@@ -1,6 +1,6 @@
 import React from "react";
-
-import { Slide, Bounce } from "./Animations";
+// import {Bounce} from './Animations'
+import { Slide } from "./Animations";
 function Header() {
   // const elRef = useRef();
 
@@ -44,17 +44,18 @@ function Header() {
 
         <Slide direction="up" duration={1000}>
           <p className="header__desc">
-            A Computer Engineering Graduate. Senior Software Engineer at Globant. Worked with various Frontend Technologies including React and Angular. 
-            Designed and developed applications on design systems involving Oracle Alta UI and Material UI. I am always keen
-            to learn new things and keep myself updated with latest
-            technology trends.
+            A Computer Engineering Graduate. Senior Software Engineer at
+            Globant. Worked with various Frontend Technologies including React
+            and Angular. Designed and developed applications on design systems
+            involving Oracle Alta UI and Material UI. I am always keen to learn
+            new things and keep myself updated with latest technology trends.
           </p>
         </Slide>
-        <Bounce duration={1000} delay={1000}>
+        {/* <Bounce duration={1000} delay={1000}>
           <a download href="/assets/Resume.pdf" className="btn-resume">
             Resume
           </a>
-        </Bounce>
+        </Bounce> */}
         {/* <a href="#techstack">Tech</a> */}
       </div>
     </header>
