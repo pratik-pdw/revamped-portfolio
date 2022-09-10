@@ -56,7 +56,6 @@ function Header() {
             Resume
           </a>
         </Bounce> */}
-        {/* <a href="#techstack">Tech</a> */}
       </div>
     </header>
   );
