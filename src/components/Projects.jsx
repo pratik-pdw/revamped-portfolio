@@ -60,7 +60,7 @@ function Projects() {
       img: "ipaddresstracker.png",
       siteUrl: "https://ipaddresstracker.pratikwadekar.me",
       codeLink: "https://github.com/pratik-pdw/ip-address-tracker",
-      backgroundColor: "#fc296d",
+      backgroundColor: "#3a3a3a",
     },
     {
       title: "Todo App",
