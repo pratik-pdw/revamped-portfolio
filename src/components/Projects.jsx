@@ -18,6 +18,15 @@ function Projects() {
       backgroundColor: "#f684ad",
     },
     {
+      title: "Devconnector MERN App",
+      description:
+        "Developed MERN stack app wherin developers can create their profile and connect with fellow developers. They can showcase their projects, work experiences and github repos.",
+      img: "devconnectormernapp.png",
+      siteUrl: "https://devconnector-mern-app.onrender.com/",
+      codeLink: "https://github.com/pratik-pdw/devconnector",
+      backgroundColor: "#dc7927",
+    },
+    {
       title: "Playjs Editor",
       description:
         "Derived an inspiration from Jupyter Notebook for Python and built a editor for javascript consisting of code cells.",
