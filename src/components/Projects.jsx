@@ -51,7 +51,7 @@ function Projects() {
       img: "noteify.png",
       siteUrl: "https://noteify.pratikwadekar.me",
       codeLink: "https://github.com/pratik-pdw/material-ui-notes-redux",
-      backgroundColor: "#33c379",
+      backgroundColor: "#1f315c",
     },
     {
       title: "IP Address Tracker",
