@@ -60,7 +60,15 @@ function Contact({ theme }) {
       </Slide>
       <br />
       <Zoom delay={1000}>
-        <p className="callout">I prefer texting over calling...</p>
+        {/* <p className="callout">I prefer texting over calling...</p> */}
+        <img
+          height={80}
+          src={
+            theme === "dark"
+              ? `images/chatbubble-dark.svg`
+              : `images/chatbubble.svg`
+          }
+        />
       </Zoom>
       <ul className="links">
         {socialLinks.map((link) => {
