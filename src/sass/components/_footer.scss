@@ -133,6 +133,10 @@
     .footer__links,
     .footer__content {
       border-top: 1px solid var(--color-grey-light);
+
+      @include responsive(tbp) {
+        border-top: none;
+      }
     }
 
     a:link,
