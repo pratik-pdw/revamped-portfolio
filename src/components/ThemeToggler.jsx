@@ -19,7 +19,9 @@ export const ThemeToggler = () => {
     <div className="theme-toggler">
       <input onChange={handleToggle} type="checkbox" id="theme-toggler" />
       <label htmlFor="theme-toggler">
-        {theme === "light" && <Icon width={35} icon={moonClearFill} />}
+        {(theme === "system" || theme === "light") && (
+          <Icon width={35} icon={moonClearFill} />
+        )}
         {theme === "dark" && <Icon width={35} icon={sunFill} />}
       </label>
     </div>
