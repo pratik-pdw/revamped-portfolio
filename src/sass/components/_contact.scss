@@ -91,6 +91,7 @@ $curve-height: 80px;
   &__icon svg {
     display: inline-block;
     font-size: 4rem;
+    filter: contrast(1);
     color: var(--color-primary);
     background-image: linear-gradient(
       to right bottom,
@@ -99,5 +100,11 @@ $curve-height: 80px;
     );
     -webkit-background-clip: text;
     background-clip: text;
+  }
+}
+
+.section-contact.dark {
+  svg {
+    color: #9076be;
   }
 }

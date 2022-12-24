@@ -8,7 +8,10 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-function Contact() {
+import { useTheme } from "next-themes";
+import { withTheme } from "./withTheme";
+
+function Contact({ theme }) {
   const socialLinks = [
     {
       icon: <FontAwesomeIcon icon={faEnvelope} />,
@@ -39,7 +42,7 @@ function Contact() {
   ];
 
   return (
-    <section id="contact-me" className="section-contact">
+    <section id="contact-me" className={`section-contact ${theme}`}>
       <svg
         className="curve"
         data-name="Layer 1"
@@ -83,4 +86,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default withTheme(Contact);

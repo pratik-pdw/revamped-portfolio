@@ -25,6 +25,7 @@
   }
 
   label {
+    cursor: pointer;
     position: relative;
     display: flex;
     border-radius: 50%;
@@ -38,6 +39,11 @@
     @include responsive(tbp) {
       height: 5rem;
       width: 5rem;
+    }
+
+    label:hover svg {
+      display: block;
+      transform: scale(1.1) !important;
     }
   }
 

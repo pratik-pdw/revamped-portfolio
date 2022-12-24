@@ -125,6 +125,21 @@
       border-top: none;
     }
   }
+
+  &.dark {
+    background-color: #1a0c21;
+    color: var(--color-grey-light);
+
+    .footer__links,
+    .footer__content {
+      border-top: 1px solid var(--color-grey-light);
+    }
+
+    a:link,
+    a:visited {
+      color: var(--color-grey-light);
+    }
+  }
 }
 
 .animateScale {

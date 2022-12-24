@@ -35,7 +35,7 @@
 }
 
 .card {
-  background-color: rgba($color-white, 0.9);
+  background-color: var(--card-background);
   cursor: pointer;
   border-radius: 10px;
   color: var(--color-grey-dark);
@@ -75,11 +75,11 @@
   }
 
   &__description {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.8;
 
     @include responsive(tbp) {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -92,7 +92,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--color-grey-dark);
+    background-color: var(--card-footer);
     a {
       display: inline-block;
       text-decoration: none;

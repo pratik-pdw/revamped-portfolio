@@ -14,10 +14,14 @@ import mongodbIcon from "@iconify/icons-logos/mongodb";
 
 import flexedBiceps from "@iconify/icons-noto-v1/flexed-biceps";
 import { Zoom, Slide } from "./Animations";
+import { useTheme } from "next-themes";
+import { withTheme } from "./withTheme";
 
-function TechStack() {
+function TechStack(props) {
+  const { resolvedTheme } = useTheme();
+
   return (
-    <section id="techstack" className="section-techstack">
+    <section id="techstack" className={"section-techstack " + props.theme}>
       <Slide direction="down">
         <h3 className="heading-secondary margin-bottom-medium">Tech Stack</h3>
       </Slide>
@@ -65,8 +69,18 @@ function TechStack() {
             <div className="composition-triangle composition-3">
               <Zoom cascade delay={2000}>
                 <Icon className="icon" icon={firebaseIcon} />
-                <Icon className="icon" icon={nodejsIcon} />
-                <Icon className="icon" icon={mongodbIcon} />
+                <Icon
+                  className={`icon ${
+                    resolvedTheme === "dark" ? "dark-icon" : ""
+                  }`}
+                  icon={nodejsIcon}
+                />
+                <Icon
+                  className={`icon ${
+                    resolvedTheme === "dark" ? "dark-icon" : ""
+                  }`}
+                  icon={mongodbIcon}
+                />
               </Zoom>
             </div>
           </div>
@@ -90,4 +104,4 @@ function TechStack() {
   );
 }
 
-export default TechStack;
+export default withTheme(TechStack);
