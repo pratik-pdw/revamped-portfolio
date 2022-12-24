@@ -2,7 +2,7 @@ $curve-height: 80px;
 
 .section-contact {
   position: relative;
-  background-color: $color-grey-lightest;
+  background-color: var(--color-grey-lightest);
   // height: 100vh;
   text-align: center;
   padding: 3rem 5rem;
@@ -13,15 +13,15 @@ $curve-height: 80px;
     height: $curve-height;
     width: 100%;
     &-shape {
-      fill: $color-grey-lightest;
+      fill: var(--color-grey-lightest);
     }
   }
 
   .callout {
     display: inline-block;
-    // background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
-    background-color: $color-white;
-    color: $color-grey-dark;
+    // background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-secondary));
+    background-color: var(--color-white);
+    color: var(--color-grey-dark);
 
     filter: drop-shadow(0rem 1px 0.2rem rgba($color-black, 0.4));
     padding: 1rem 2rem;
@@ -39,7 +39,7 @@ $curve-height: 80px;
       z-index: -1;
       transform: rotate(-63deg);
       border: 20px solid transparent;
-      border-top-color: $color-white;
+      border-top-color: var(--color-white);
       border-bottom: 0;
       border-left: 0;
     }
@@ -85,17 +85,17 @@ $curve-height: 80px;
     }
 
     p {
-      color: $color-grey-dark;
+      color: var(--color-grey-dark);
     }
   }
   &__icon svg {
     display: inline-block;
     font-size: 4rem;
-    color: $color-primary;
+    color: var(--color-primary);
     background-image: linear-gradient(
       to right bottom,
-      $color-primary,
-      $color-secondary
+      var(--color-primary),
+      var(--color-secondary)
     );
     -webkit-background-clip: text;
     background-clip: text;

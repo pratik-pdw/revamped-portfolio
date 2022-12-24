@@ -5,9 +5,23 @@
   padding: 0;
   box-sizing: inherit;
 }
+
 html {
-  // scroll-behavior: smooth;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms;
 }
+
+html {
+  @each $key, $value in $light {
+    --#{$key}: #{$value};
+  }
+}
+
+html[data-theme="dark"] {
+  @each $key, $value in $dark {
+    --#{$key}: #{$value};
+  }
+}
+
 body {
   box-sizing: border-box;
 }

@@ -5,8 +5,8 @@
   // height: 100vh;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary,
-    $color-secondary
+    var(--color-primary),
+    var(--color-secondary)
   );
 
   @include responsive(tbp) {
@@ -38,7 +38,7 @@
   background-color: rgba($color-white, 0.9);
   cursor: pointer;
   border-radius: 10px;
-  color: $color-grey-dark;
+  color: var(--color-grey-dark);
   backdrop-filter: blur(40px);
   border: 2px solid transparent;
   background-clip: padding-box;
@@ -50,7 +50,7 @@
     height: 50%;
     position: relative;
     overflow: hidden;
-    background-color: $color-tertiary;
+    background-color: var(--color-tertiary);
     border-radius: 10px;
 
     p {
@@ -69,12 +69,13 @@
       transition: all 0.2s;
       top: 0;
       left: 0;
+      right: -1px;
       transform: rotate(-10deg) translate(50px, 60px);
     }
   }
 
   &__description {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.8;
 
     @include responsive(tbp) {
@@ -85,12 +86,13 @@
   &__links {
     bottom: 0;
     left: 0;
+    right: 0;
     padding: 1rem;
     position: absolute;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: $color-grey-dark;
+    background-color: var(--color-grey-dark);
     a {
       display: inline-block;
       text-decoration: none;
@@ -98,7 +100,7 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      color: $color-white;
+      color: var(--color-white);
 
       span {
         display: inline-block;
@@ -111,7 +113,7 @@
         width: 10px;
         height: 10px;
         position: absolute;
-        background-color: $color-lime;
+        background-color: var(--color-lime);
         left: -10px;
         top: 50%;
         border-radius: 100%;

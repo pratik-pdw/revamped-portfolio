@@ -3,8 +3,8 @@
   height: 100vh;
   background-image: linear-gradient(
     112.28deg,
-    $color-primary 11.42%,
-    $color-secondary 77.31%
+    var(--color-primary) 11.42%,
+    var(--color-secondary) 77.31%
   );
   position: relative;
   overflow: hidden;
@@ -17,7 +17,7 @@
     width: calc(124% + 1.3px);
 
     &-shape {
-      fill: $color-grey-lightest;
+      fill: var(--color-grey-lightest);
     }
   }
 
@@ -28,7 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: $color-tertiary-dark;
+    color: var(--color-tertiary-dark);
     width: 60%;
 
     h1 {
@@ -48,11 +48,11 @@
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.9;
 
     @include responsive(tbp) {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -60,7 +60,7 @@
     display: inline-block;
     min-width: 100%;
     &-txt {
-      border-right: 3px solid $color-tertiary-dark;
+      border-right: 3px solid var(--color-tertiary-dark);
       display: inline-block;
     }
   }

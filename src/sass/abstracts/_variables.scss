@@ -1,13 +1,66 @@
-$color-primary: #3bb7ed;
-$color-secondary: #47e0cf;
-$color-tertiary: #1292a3;
-$color-tertiary-dark: #0a4f77ea;
+// var(--color-primary): #3bb7ed;
+// var(--color-secondary): #47e0cf;
+// var(--color-tertiary): #1292a3;
+// var(--color-tertiary)-dark: #0a4f77ea;
+// var(--color-white): #fff;
+// var(--color-grey-light): #cccccc;
+// var(--color-grey-lightest): #fcfcfc;
+// var(--color-grey-dark): #383838;
+// var(--color-black): #000;
+// var(--color-lime): lime;
+// $icon-size: 10rem;
+// $icon-size-tb: 8rem;
+// $icon-size-mb: 6rem;
+// $small: 2rem;
+// $medium: 4rem;
+// $large: 6rem;
+$light: (
+  "color-primary": #3bb7ed,
+  "color-secondary": #47e0cf,
+  "color-tertiary": #1292a3,
+  "color-tertiary-dark": #0a4f77ea,
+  "color-white": #fff,
+  "color-grey-light": #cccccc,
+  "color-grey-lightest": #fcfcfc,
+  "color-grey-dark": #383838,
+  "color-black": #000,
+  "color-lime": lime,
+);
 
-$color-white: #fff;
-$color-grey-light: #cccccc;
-$color-grey-lightest: #fcfcfc;
-$color-grey-dark: #383838;
+// Dark Colors
+
+// var(--color-primary): #0a5a8c;
+// var(--color-secondary): #421740;
+// var(--color-tertiary): #1292a3;
+// var(--color-tertiary)-dark: #ffffffea;
+// var(--color-white): #fff;
+// var(--color-grey-light): #cccccc;
+// var(--color-grey-lightest): #fcfcfc;
+// var(--color-grey-dark): #383838;
+// var(--color-black): #000;
+// var(--color-lime): lime;
+// $icon-size: 10rem;
+// $icon-size-tb: 8rem;
+// $icon-size-mb: 6rem;
+// $small: 2rem;
+// $medium: 4rem;
+// $large: 6rem;
+
+$dark: (
+  "color-primary": #0a5a8c,
+  "color-secondary": #421740,
+  "color-tertiary": #1292a3,
+  "color-tertiary-dark": #ffffffea,
+  "color-grey-light": #cccccc,
+  "color-grey-lightest": #fcfcfc,
+  "color-grey-dark": #383838,
+  "color-black": #000,
+  "color-white": #fff,
+  "color-lime": lime,
+);
+
 $color-black: #000;
+$color-white: #fff;
 $color-lime: lime;
 $icon-size: 10rem;
 $icon-size-tb: 8rem;

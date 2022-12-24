@@ -1,49 +1,41 @@
-@font-face {
-  font-family: Pacifico;
-  src: url("../../../public/fonts/Pacifico-Regular.ttf");
-}
-
-@font-face {
-  font-family: Itim;
-  src: url("../../../public/fonts/Itim-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=McLaren&family=Sacramento&display=swap");
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Itim", sans-serif;
+  font-family: "McLaren", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.6rem;
 }
 
 .heading-primary {
-  font-family: "Pacifico";
+  font-family: "Sacramento";
   font-style: normal;
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 6rem;
   text-shadow: 0px 1px 0.1rem rgba(0, 0, 0, 0.5);
 
   @include responsive(tbp) {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
   }
 
   @include responsive(mb) {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
 .heading-secondary {
   display: inline-block;
-  font-family: "Pacifico";
-  font-weight: 400;
-  font-size: 3.2rem;
+  font-family: "Sacramento";
+  font-weight: 800;
+  font-size: 4.2rem;
   background-image: linear-gradient(
     112.28deg,
-    $color-primary 11.42%,
-    $color-secondary 77.31%
+    var(--color-primary) 11.42%,
+    var(--color-secondary) 77.31%
   );
   color: transparent;
   -webkit-background-clip: text;
@@ -56,7 +48,7 @@ body {
     content: "";
     width: 50px;
     height: 1.5px;
-    background: $color-grey-light;
+    background: var(--color-grey-light);
     position: absolute;
   }
   &::after {
@@ -73,20 +65,20 @@ body {
 }
 
 .heading-secondary-light {
-  color: $color-white;
+  color: var(--color-white);
 
   &::after,
   &::before {
-    background: $color-white;
+    background: var(--color-white);
   }
 }
 
 .heading-secondary-dark {
-  color: $color-tertiary-dark;
+  color: var(--color-tertiary-dark);
 
   &::after,
   &::before {
-    background: $color-tertiary-dark;
+    background: var(--color-tertiary-dark);
   }
 }
 
@@ -95,10 +87,14 @@ body {
   display: inline-block;
   padding: 0rem 2rem;
   border-radius: 50px;
-  color: $color-white;
+  color: var(--color-white);
   transform: rotate(-5deg);
   margin-bottom: 1rem;
-  background: linear-gradient(to right, $color-primary, $color-secondary);
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   transform-origin: left;
   transition: transform 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   cursor: pointer;

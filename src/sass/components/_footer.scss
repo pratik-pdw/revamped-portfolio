@@ -4,7 +4,7 @@
   padding: 15rem 5rem;
   padding-bottom: 5rem;
   text-align: center;
-  color: $color-grey-lightest;
+  color: var(--color-grey-lightest);
   font-size: 1.6rem;
 
   @include responsive(tbp) {
@@ -26,7 +26,7 @@
     height: 80px;
 
     &-shape {
-      fill: $color-grey-lightest;
+      fill: var(--color-grey-lightest);
     }
   }
 
@@ -40,8 +40,8 @@
       color: transparent;
       background-image: linear-gradient(
         to right bottom,
-        $color-primary,
-        $color-secondary
+        var(--color-primary),
+        var(--color-secondary)
       );
       background-clip: text;
       font-size: 2.5rem;
@@ -92,17 +92,18 @@
         transition: all 0.2s;
         padding: 0rem 1rem;
         border-radius: 50px;
+        font-size: 1.5rem;
 
         &:visited,
         &:link {
-          color: $color-grey-lightest;
+          color: var(--color-grey-lightest);
         }
 
         &:hover {
           background-image: linear-gradient(
             to right bottom,
-            $color-primary,
-            $color-secondary
+            var(--color-primary),
+            var(--color-secondary)
           );
           transform: rotate(-10deg) scale(1.2);
           @include responsive(tbp) {
@@ -118,7 +119,7 @@
   &__content {
     flex-basis: 40%;
     padding-top: 2rem;
-    border-top: 1px solid $color-secondary;
+    border-top: 1px solid var(--color-secondary);
 
     @include responsive(tbp) {
       border-top: none;
