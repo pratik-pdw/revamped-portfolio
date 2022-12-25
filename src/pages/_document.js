@@ -17,11 +17,19 @@ export default function Document() {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="627" />
         <meta charset="utf-8" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=McLaren&family=Sacramento&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          as="font"
+          src="/fonts/sacramento-v13-latin-regular.woff2"
+          type="font/woff2"
+          crossorigin
+        />
+        <link
+          rel="preload"
+          as="font"
+          src="/fonts/mclaren-v13-latin-regular.woff2"
+          type="font/woff2"
+          crossorigin
         />
         <link
           rel="apple-touch-icon"

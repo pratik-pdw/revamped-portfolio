@@ -99,7 +99,7 @@ function Projects() {
         </h3>
       </Slide>
       <div className="grid">
-        <Zoom cascade>
+        <Zoom cascade damping={0.1}>
           {projects.map((project) => {
             return (
               <div

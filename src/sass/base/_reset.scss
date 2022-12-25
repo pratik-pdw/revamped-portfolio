@@ -1,3 +1,40 @@
+/* sacramento-regular - latin */
+@font-face {
+  font-family: "Sacramento";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/sacramento-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/sacramento-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/sacramento-v13-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/sacramento-v13-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/sacramento-v13-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/sacramento-v13-latin-regular.svg#Sacramento") format("svg"); /* Legacy iOS */
+}
+
+/* mclaren-regular - latin */
+@font-face {
+  font-family: "McLaren";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/mclaren-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("/fonts/mclaren-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/mclaren-v13-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/mclaren-v13-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/mclaren-v13-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/fonts/mclaren-v13-latin-regular.svg#McLaren") format("svg"); /* Legacy iOS */
+}
+
 *,
 *::after,
 *::before {

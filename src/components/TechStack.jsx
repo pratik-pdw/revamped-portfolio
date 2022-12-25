@@ -67,7 +67,7 @@ function TechStack(props) {
               </Zoom>
             </div>
             <div className="composition-triangle composition-3">
-              <Zoom cascade delay={2000}>
+              <Zoom cascade delay={1000}>
                 <Icon className="icon" icon={firebaseIcon} />
                 <Icon
                   className={`icon ${
