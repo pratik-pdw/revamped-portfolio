@@ -125,25 +125,6 @@
       border-top: none;
     }
   }
-
-  &.dark {
-    background-color: #1a0c21;
-    color: var(--color-grey-light);
-
-    .footer__links,
-    .footer__content {
-      border-top: 1px solid var(--color-grey-light);
-
-      @include responsive(tbp) {
-        border-top: none;
-      }
-    }
-
-    a:link,
-    a:visited {
-      color: var(--color-grey-light);
-    }
-  }
 }
 
 .animateScale {
@@ -179,5 +160,24 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+[data-theme="dark"] .footer {
+  background-color: #1a0c21;
+  color: var(--color-grey-light);
+
+  .footer__links,
+  .footer__content {
+    border-top: 1px solid var(--color-grey-light);
+
+    @include responsive(tbp) {
+      border-top: none;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: var(--color-grey-light);
   }
 }

@@ -44,6 +44,7 @@
 }
 
 html {
+  overflow-x: hidden;
   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms;
 }
 
@@ -61,4 +62,29 @@ html[data-theme="dark"] {
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+section,
+div,
+main,
+footer {
+  transition: background 0.3s ease-in-out;
+}
+
+svg path {
+  transition: fill 0.3s ease-in-out;
 }

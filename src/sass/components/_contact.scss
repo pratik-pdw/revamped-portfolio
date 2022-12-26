@@ -103,8 +103,12 @@ $curve-height: 80px;
   }
 }
 
-.section-contact.dark {
+[data-theme="dark"] .section-contact {
   svg {
     color: #9076be;
   }
+}
+
+[data-theme="dark"] .chat-bubble {
+  content: url("/images/chatbubble-dark.svg");
 }

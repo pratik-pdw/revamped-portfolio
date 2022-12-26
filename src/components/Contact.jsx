@@ -8,10 +8,8 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { useTheme } from "next-themes";
-import { withTheme } from "./withTheme";
 
-function Contact({ theme }) {
+function Contact() {
   const socialLinks = [
     {
       icon: <FontAwesomeIcon icon={faEnvelope} />,
@@ -42,7 +40,7 @@ function Contact({ theme }) {
   ];
 
   return (
-    <section id="contact-me" className={`section-contact ${theme}`}>
+    <section id="contact-me" className="section-contact">
       <svg
         className="curve"
         data-name="Layer 1"
@@ -62,12 +60,9 @@ function Contact({ theme }) {
       <Zoom delay={1000}>
         {/* <p className="callout">I prefer texting over calling...</p> */}
         <img
+          className="chat-bubble"
           height={80}
-          src={
-            theme === "dark"
-              ? `images/chatbubble-dark.svg`
-              : `images/chatbubble.svg`
-          }
+          src={`images/chatbubble.svg`}
         />
       </Zoom>
       <ul className="links">
@@ -94,4 +89,4 @@ function Contact({ theme }) {
   );
 }
 
-export default withTheme(Contact);
+export default Contact;

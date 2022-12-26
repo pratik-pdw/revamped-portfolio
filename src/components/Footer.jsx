@@ -5,9 +5,8 @@ import reactIcon from "@iconify/icons-vscode-icons/file-type-reactjs";
 import sassIcon from "@iconify/icons-vscode-icons/file-type-sass";
 
 import { Link } from "react-scroll";
-import { withTheme } from "./withTheme";
 
-function Footer(props) {
+function Footer() {
   const footerLogo = "<pratikwadekar.me />";
   const navLinks = [
     { label: "Home", sectionId: "home", offset: 0 },
@@ -16,7 +15,7 @@ function Footer(props) {
     { label: "Contact Me", sectionId: "contact-me", offset: 0 },
   ];
   return (
-    <footer className={`footer ${props.theme}`}>
+    <footer className="footer">
       <svg
         className="footer__curve"
         data-name="Layer 1"
@@ -87,4 +86,4 @@ function Footer(props) {
   );
 }
 
-export default withTheme(Footer);
+export default Footer;

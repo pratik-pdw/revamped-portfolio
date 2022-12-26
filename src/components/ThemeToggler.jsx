@@ -8,7 +8,7 @@ export const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
   console.log("THEME", theme);
   const handleToggle = (e) => {
-    if (e.target.checked) {
+    if (theme === "light") {
       setTheme("dark");
     } else {
       setTheme("light");
@@ -17,13 +17,12 @@ export const ThemeToggler = () => {
 
   return (
     <div className="theme-toggler">
-      <input onChange={handleToggle} type="checkbox" id="theme-toggler" />
-      <label htmlFor="theme-toggler">
+      <button onClick={handleToggle} htmlFor="theme-toggler">
         {(theme === "system" || theme === "light") && (
           <Icon width={35} icon={moonClearFill} />
         )}
         {theme === "dark" && <Icon width={35} icon={sunFill} />}
-      </label>
+      </button>
     </div>
   );
 };
