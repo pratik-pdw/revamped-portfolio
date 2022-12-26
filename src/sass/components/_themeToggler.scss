@@ -35,13 +35,22 @@
       width: 5rem;
     }
 
-    label:hover svg {
-      display: block;
-      transform: scale(1.1) !important;
+    &:hover svg.sunIcon {
+      display: inline-block;
+      transform: rotate(180deg) scale(1.1) !important;
+    }
+
+    &:hover svg.moonIcon {
+      display: inline-block;
+      transform: scale(1.2) !important;
     }
   }
 
   svg {
+    transition: transform 0.5s ease-in-out;
+    &.moonIcon {
+      transition: transform 0.3s ease-in-out;
+    }
     @include responsive(tbp) {
       width: 25px;
     }

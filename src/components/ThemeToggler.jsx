@@ -19,9 +19,16 @@ export const ThemeToggler = () => {
     <div className="theme-toggler">
       <button onClick={handleToggle} htmlFor="theme-toggler">
         {(theme === "system" || theme === "light") && (
-          <Icon width={35} icon={moonClearFill} />
+          <Icon className="moonIcon" width={30} icon={moonClearFill} />
         )}
-        {theme === "dark" && <Icon width={35} icon={sunFill} />}
+        {theme === "dark" && (
+          <Icon
+            className="sunIcon"
+            style={{ transform: "rotate(45deg) scale(1)" }}
+            width={35}
+            icon={sunFill}
+          />
+        )}
       </button>
     </div>
   );
