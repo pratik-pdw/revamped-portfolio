@@ -5,8 +5,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import TechStack from "../components/TechStack";
 import { ThemeToggler } from "../components/ThemeToggler";
-import { useTheme } from "next-themes";
-import { useEffect } from "react";
+
 function HomePage() {
   return (
     <>
