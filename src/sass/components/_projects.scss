@@ -9,7 +9,7 @@
     var(--color-primary),
     var(--color-secondary)
   );
-  z-index: -1;
+  z-index: 0;
 
   @include responsive(tbp) {
     padding: 10rem 3rem;

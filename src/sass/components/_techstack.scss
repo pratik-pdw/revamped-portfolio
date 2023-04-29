@@ -53,12 +53,13 @@
   // overflow-x: hidden;
   .techstack__curve {
     // svg
+    z-index: 1;
     position: absolute;
     transform: rotate(180deg);
     left: 0;
-    top: 100%;
+    top: 99.8%;
     width: 100%;
-    height: 60px;
+    height: 67px;
     &-shape {
       fill: var(--color-grey-lightest);
     }
