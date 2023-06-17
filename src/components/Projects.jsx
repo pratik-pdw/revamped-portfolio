@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
-
 import { Zoom, Slide } from "./Animations";
-
 import { FaExternalLinkAlt, FaCode, FaLock } from "react-icons/fa";
+
+const HOST = "pratikwadekar.in/";
 
 function Projects() {
   const projects = [
@@ -31,7 +30,7 @@ function Projects() {
       description:
         "Derived an inspiration from Jupyter Notebook for Python and built a editor for javascript consisting of code cells.",
       img: "playjseditor.png",
-      siteUrl: "https://playjs.pratikwadekar.me",
+      siteUrl: `https://playjs.${HOST}`,
       codeLink: "https://github.com/pratik-pdw/jupyter-clone",
       backgroundColor: "#dcb927",
     },
@@ -40,7 +39,7 @@ function Projects() {
       description:
         "A Postman like clone built with Angular and Bootstrap which can be used to fire GET, POST, PUT, PATCH, DELETE requests right in the browser",
       img: "restful.png",
-      siteUrl: "https://restful.pratikwadekar.me",
+      siteUrl: `https://restful.${HOST}`,
       codeLink: "https://github.com/pratik-pdw/restful-api-request-builder",
       backgroundColor: "#33c379",
     },
@@ -49,7 +48,7 @@ function Projects() {
       description:
         "A Google Keep like clone for taking notes. This is built using React-Redux, Material UI and Firebase.",
       img: "noteify.png",
-      siteUrl: "https://noteify.pratikwadekar.me",
+      siteUrl: `https://noteify.${HOST}`,
       codeLink: "https://github.com/pratik-pdw/material-ui-notes-redux",
       backgroundColor: "#1f315c",
     },
@@ -58,7 +57,7 @@ function Projects() {
       description:
         "A challenge from frontendmentor.io. This is a react app which uses public IP and geocodes it.",
       img: "ipaddresstracker.png",
-      siteUrl: "https://ipaddresstracker.pratikwadekar.me",
+      siteUrl: `https://ipaddresstracker.${HOST}`,
       codeLink: "https://github.com/pratik-pdw/ip-address-tracker",
       backgroundColor: "#3a3a3a",
     },
@@ -67,7 +66,7 @@ function Projects() {
       description:
         "Another challenge from frontendmentor.io. This is a todo app with a little twist. You can drag the todos to reorder them",
       img: "fmentortodoapp.jpg",
-      siteUrl: "https://fmentor-todo-app-pdw.netlify.app",
+      siteUrl: `https://fmentor-todo-app.${HOST}`,
       codeLink: "https://github.com/pratik-pdw/fmentor-todo-app",
       backgroundColor: "#b2a7f6",
     },
@@ -75,7 +74,7 @@ function Projects() {
       title: "Astrology App",
       description:
         "A astrology app built using React and Bootstrap which lets you see your horoscope for today, yesterday and tommorrow",
-      siteUrl: "https://pratik-pdw.github.io/react-astrology",
+      siteUrl: `https://astrology.${HOST}`,
       codeLink: "https://github.com/pratik-pdw/react-astrology",
       img: "astrologyapp.png",
       backgroundColor: "#0088b7",
@@ -84,7 +83,7 @@ function Projects() {
       title: "Lofi Music App",
       description:
         "Want to hear some lofi music beats ? An application built using React Hooks lets you hear to some lofi beats by Chillhop",
-      siteUrl: "https://pratik-pdw.github.io/lofi-music-app",
+      siteUrl: `https://lofi-music.${HOST}`,
       img: "musicapp.png",
       codeLink: "https://github.com/pratik-pdw/lofi-music-app",
       backgroundColor: "#5f1f54",
