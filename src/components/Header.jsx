@@ -44,19 +44,13 @@ function Header() {
 
         <Slide direction="up" duration={1000}>
           <p className="header__desc">
-            I am a Computer Engineering Graduate currently employed as a <b style="
-    font-size: 16px;
-    color: #0a4464;
-">Software Engineer II</b> at <b style="
-    font-size: 16px;
-    color: #0a4464;
-">JP Morgan Chase &amp; Co. </b> My expertise lies in Frontend Technologies, specifically <b style="
-    font-size: 16px;
-    color: #0a4464;
-">React and Angular.</b> I have experience in designing and developing applications using design systems such as <b style="
-    font-size: 16px;
-    color: #0a4464;
-">Material UI, Bootstrap </b>. I am always eager to expand my knowledge and stay up-to-date with the latest technology trends.
+            I am a Computer Engineering Graduate currently employed as a{" "}
+            <b>Software Engineer II</b> at <b>JP Morgan Chase &amp; Co. </b> My
+            expertise lies in Frontend Technologies, specifically{" "}
+            <b>React and Angular.</b> I have experience in designing and
+            developing applications using design systems such as{" "}
+            <b>Material UI, Bootstrap </b>. I am always eager to expand my
+            knowledge and stay up-to-date with the latest technology trends.
           </p>
         </Slide>
       </div>
