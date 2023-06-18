@@ -44,11 +44,7 @@ function Header() {
 
         <Slide direction="up" duration={1000}>
           <p className="header__desc">
-            A Computer Engineering Graduate. Senior Software Engineer at
-            Globant. Worked with various Frontend Technologies including React
-            and Angular. Designed and developed applications on design systems
-            involving Oracle Alta UI and Material UI. I am always keen to learn
-            new things and keep myself updated with latest technology trends.
+            I am a Computer Engineering Graduate currently employed as a Software Engineer II at JP Morgan Chase & Co. My expertise lies in Frontend Technologies, specifically React and Angular. I have experience in designing and developing applications using design systems such as Material UI, Bootstrap, and Oracle Alta UI. I am always eager to expand my knowledge and stay up-to-date with the latest technology trends.
           </p>
         </Slide>
       </div>
