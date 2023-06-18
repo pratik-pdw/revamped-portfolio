@@ -34,15 +34,15 @@ function Projects() {
       codeLink: "https://github.com/pratik-pdw/jupyter-clone",
       backgroundColor: "#dcb927",
     },
-    {
-      title: "Restful API Request Builder",
-      description:
-        "A Postman like clone built with Angular and Bootstrap which can be used to fire GET, POST, PUT, PATCH, DELETE requests right in the browser",
-      img: "restful.png",
-      siteUrl: `https://restful.${HOST}`,
-      codeLink: "https://github.com/pratik-pdw/restful-api-request-builder",
-      backgroundColor: "#33c379",
-    },
+    // {
+    //   title: "Restful API Request Builder",
+    //   description:
+    //     "A Postman like clone built with Angular and Bootstrap which can be used to fire GET, POST, PUT, PATCH, DELETE requests right in the browser",
+    //   img: "restful.png",
+    //   siteUrl: `https://restful.${HOST}`,
+    //   codeLink: "https://github.com/pratik-pdw/restful-api-request-builder",
+    //   backgroundColor: "#33c379",
+    // },
     {
       title: "Noteify",
       description:
@@ -79,15 +79,15 @@ function Projects() {
     //   img: "astrologyapp.png",
     //   backgroundColor: "#0088b7",
     // },
-    {
-      title: "Lofi Music App",
-      description:
-        "Want to hear some lofi music beats ? An application built using React Hooks lets you hear to some lofi beats by Chillhop",
-      siteUrl: `https://lofi-music.${HOST}`,
-      img: "musicapp.png",
-      codeLink: "https://github.com/pratik-pdw/lofi-music-app",
-      backgroundColor: "#5f1f54",
-    },
+    // {
+    //   title: "Lofi Music App",
+    //   description:
+    //     "Want to hear some lofi music beats ? An application built using React Hooks lets you hear to some lofi beats by Chillhop",
+    //   siteUrl: `https://lofi-music.${HOST}`,
+    //   img: "musicapp.png",
+    //   codeLink: "https://github.com/pratik-pdw/lofi-music-app",
+    //   backgroundColor: "#5f1f54",
+    // },
   ];
 
   return (
