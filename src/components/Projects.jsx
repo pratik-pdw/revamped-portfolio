@@ -64,7 +64,7 @@ function Projects() {
     {
       title: "Todo App",
       description:
-        "Another challenge from frontendmentor.io. This is a todo app with a little twist. You can drag the todos to reorder them",
+        "A todo list that features draggable lists and a theme switcher which adds beauty to this todo app",
       img: "fmentortodoapp.jpg",
       siteUrl: `https://fmentor-todo-app.${HOST}`,
       codeLink: "https://github.com/pratik-pdw/fmentor-todo-app",
