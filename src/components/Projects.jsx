@@ -52,15 +52,15 @@ function Projects() {
       codeLink: "https://github.com/pratik-pdw/material-ui-notes-redux",
       backgroundColor: "#1f315c",
     },
-    {
-      title: "IP Address Tracker",
-      description:
-        "A challenge from frontendmentor.io. This is a react app which uses public IP and geocodes it.",
-      img: "ipaddresstracker.png",
-      siteUrl: `https://ipaddresstracker.${HOST}`,
-      codeLink: "https://github.com/pratik-pdw/ip-address-tracker",
-      backgroundColor: "#3a3a3a",
-    },
+    // {
+    //   title: "IP Address Tracker",
+    //   description:
+    //     "A challenge from frontendmentor.io. This is a react app which uses public IP and geocodes it.",
+    //   img: "ipaddresstracker.png",
+    //   siteUrl: `https://ipaddresstracker.${HOST}`,
+    //   codeLink: "https://github.com/pratik-pdw/ip-address-tracker",
+    //   backgroundColor: "#3a3a3a",
+    // },
     {
       title: "Todo App",
       description:
@@ -70,15 +70,15 @@ function Projects() {
       codeLink: "https://github.com/pratik-pdw/fmentor-todo-app",
       backgroundColor: "#b2a7f6",
     },
-    {
-      title: "Astrology App",
-      description:
-        "A astrology app built using React and Bootstrap which lets you see your horoscope for today, yesterday and tommorrow",
-      siteUrl: `https://astrology.${HOST}`,
-      codeLink: "https://github.com/pratik-pdw/react-astrology",
-      img: "astrologyapp.png",
-      backgroundColor: "#0088b7",
-    },
+    // {
+    //   title: "Astrology App",
+    //   description:
+    //     "A astrology app built using React and Bootstrap which lets you see your horoscope for today, yesterday and tommorrow",
+    //   siteUrl: `https://astrology.${HOST}`,
+    //   codeLink: "https://github.com/pratik-pdw/react-astrology",
+    //   img: "astrologyapp.png",
+    //   backgroundColor: "#0088b7",
+    // },
     {
       title: "Lofi Music App",
       description:
