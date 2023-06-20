@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta property="og:title" content="https://www.pratikwadekar.me" />
+        <meta property="og:title" content="https://www.pratikwadekar.in" />
         <meta
           property="og:image"
           content="https://i.ibb.co/6nNC918/Screenshot-2022-03-03-at-11-12-15-AM.png"
@@ -13,7 +13,7 @@ export default function Document() {
           property="og:description"
           content="Portfolio for Pratik Wadekar"
         />
-        <meta property="og:url" content="https://www.pratikwadekar.me/" />
+        <meta property="og:url" content="https://www.pratikwadekar.in/" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="627" />
         <meta charset="utf-8" />
@@ -59,7 +59,7 @@ export default function Document() {
           src="https://kit.fontawesome.com/7f315885d3.js"
           crossorigin="anonymous"
         ></script>
-        <title>pratikwadekar.me</title>
+        <title>pratikwadekar.in</title>
       </Head>
       <body>
         <Main />

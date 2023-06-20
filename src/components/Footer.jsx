@@ -7,7 +7,7 @@ import sassIcon from "@iconify/icons-vscode-icons/file-type-sass";
 import { Link } from "react-scroll";
 
 function Footer() {
-  const footerLogo = "<pratikwadekar.me />";
+  const footerLogo = "<pratikwadekar.in />";
   const navLinks = [
     { label: "Home", sectionId: "home", offset: 0 },
     { label: "Tech Stack", sectionId: "techstack", offset: 0 },
