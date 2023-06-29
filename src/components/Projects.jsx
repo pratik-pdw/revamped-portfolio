@@ -70,15 +70,15 @@ function Projects() {
       codeLink: "https://github.com/pratik-pdw/fmentor-todo-app",
       backgroundColor: "#b2a7f6",
     },
-    // {
-    //   title: "Astrology App",
-    //   description:
-    //     "A astrology app built using React and Bootstrap which lets you see your horoscope for today, yesterday and tommorrow",
-    //   siteUrl: `https://astrology.${HOST}`,
-    //   codeLink: "https://github.com/pratik-pdw/react-astrology",
-    //   img: "astrologyapp.png",
-    //   backgroundColor: "#0088b7",
-    // },
+    {
+      title: "Password Generator",
+      description:
+        "Uses Typescript and SASS to generate random passwords using custom random password generation logic",
+      siteUrl: `https://password-generator.${HOST}`,
+      codeLink: "https://github.com/pratik-pdw/password-generator",
+      img: "passwordgenerator.png",
+      backgroundColor: "#0088b7",
+    },
     // {
     //   title: "Lofi Music App",
     //   description:
